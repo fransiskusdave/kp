@@ -12,7 +12,7 @@
       public function getAllGeojson(Request $request) 
       {
           $geojsons = Desa::all();
-          $baseUrl = URL::to('/') . '/api/desa/';
+          $baseUrl = URL::to('/') . '/api/kelurahan/';
       
           foreach ($geojsons as $geojson) {
               $geojson->file_geojson = $baseUrl . $geojson->file_geojson;

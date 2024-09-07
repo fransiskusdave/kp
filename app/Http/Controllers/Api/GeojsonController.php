@@ -12,7 +12,7 @@
       public function getAllGeojson(Request $request) 
       {
           $geojsons = Geojson::all();
-          $baseUrl = URL::to('/') . '/api/fasilitas/';
+          $baseUrl = URL::to('/') . '/api/subbidang/';
       
           foreach ($geojsons as $geojson) {
               $geojson->file_geojson = $baseUrl . $geojson->file_geojson;
