@@ -22,7 +22,7 @@
 
       public function getGeojsonFile($filename)
       {
-          $path = 'Bidang/' . $filename;
+          $path = 'Subbidang/' . $filename;
           
           if (Storage::disk('public')->exists($path)) {
               $file = Storage::disk('public')->get($path);
